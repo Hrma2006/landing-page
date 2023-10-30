@@ -1,68 +1,104 @@
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  border: none;
-  list-style-type: none;
-  
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+	border: none;
 }
-body{
+body {
+	font-family: Robot, Rubik, Ubuntu, sans-serif;
+}
+header {
+	height: 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(104, 204, 81);
+	padding: 30px 150px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+header ul {
+	display: flex;
+	gap: 20px;
+}
+header a {
+	font-size: 15px;
+	color: white;
+}
+.first {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	padding: 40px 0px;
+	background-color: rgb(104, 204, 81);
+}
+.first-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+.first-left h1 {
+	flex-wrap: wrap;
+	max-width: 400px;
+}
+.first img {
+	height: 300px;
+	width: auto;
+	border-radius: 10px;
+}
+.first-left p {
+	flex-wrap: wrap;
+	max-width: 500px;
+	opacity: 70%;
+	font-weight: 500;
+}
+.first-left button {
+	font-size: 20px;
+	font-weight: 600;
+	background-color: aquamarine;
+	padding: 5px;
+	border-radius: 10px;
+}
+.second {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	gap: 50px;
+	background-color: red;
+	padding: 70px;
+}
+.second h2 {
+	margin-top: 10px;
+}
+.cards {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex: 1;
+}
+.card{
   display: flex;
   flex-direction: column;
-
-}
-header{
-  display: flex;
-  height: 70px;
-  background-color: rgb(155, 0, 0);
   align-items: center;
-  justify-content:space-between;
-  
 }
-.left,.right{
-  margin: 30px;
+.card img {
+	height: 180px;
+	border: 10px solid blue;
+	border-radius: 10px;
+	width: auto;
 }
-.left a{
-  color: white;
-  font-size: 43px;
-  font-family:Tahoma,Arial, Helvetica, sans-serif ;
-}
-.right ul{
-  display: flex;
+.text {
+  max-width: 180px;
   flex-wrap: wrap;
-  gap: 4rem;
-  
-}
-.right li{
-  color: white;
-  font-size: 28px;
-}
-
-.section1{
-  background-color:rgb(154, 162, 222) ;
-  display: flex;
-  justify-content: space-evenly;
-flex:0 0 100%;
-
-}
-.section2 {
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(42, 188, 42);
-}
-.section2 ul{
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-footer{
-  display: flex;
-  height: 30px;
-  background-color: gray;
-}
-.asdj{
-  
 }
