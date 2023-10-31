@@ -1,3 +1,10 @@
+:root{
+	--primary:rgb(9, 9, 46);
+	--secondary:grey;
+	--accent:rgb(0, 157, 248);
+	--background:white;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,14 +15,15 @@
 }
 body {
 	font-family: Robot, Rubik, Ubuntu, sans-serif;
+	background-color: var(--background);
 }
 header {
 	height: 4rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgb(104, 204, 81);
-	padding: 30px 150px;
+	background-color: var(--primary);
+	padding: 15px 20px;
 }
 .container {
 	display: flex;
@@ -26,6 +34,12 @@ header ul {
 	display: flex;
 	gap: 20px;
 }
+.logo{
+font-size: 20px;
+font-weight: 800;
+}
+
+
 header a {
 	font-size: 15px;
 	color: white;
@@ -35,8 +49,8 @@ header a {
 	justify-content: center;
 	align-items: center;
 	gap: 100px;
-	padding: 40px 0px;
-	background-color: rgb(104, 204, 81);
+	padding: 40px 20px;
+	background-color: var(--primary);
 }
 .first-left {
 	display: flex;
@@ -45,24 +59,32 @@ header a {
 	gap: 10px;
 }
 .first-left h1 {
+	color: white;
+	line-height: 40px;
 	flex-wrap: wrap;
 	max-width: 400px;
 }
-.first img {
-	height: 300px;
-	width: auto;
+.photo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--secondary);
+	height: 200px;
+	width: 400px;
 	border-radius: 10px;
 }
 .first-left p {
+	color: white;
 	flex-wrap: wrap;
 	max-width: 500px;
 	opacity: 70%;
 	font-weight: 500;
 }
 .first-left button {
+	color: white;
 	font-size: 20px;
 	font-weight: 600;
-	background-color: aquamarine;
+	background-color: var(--accent);
 	padding: 10px;
 	border-radius: 10px;
 }
@@ -73,7 +95,6 @@ header a {
 	text-align: center;
 	align-items: center;
 	gap: 50px;
-	background-color: red;
 	padding: 70px;
 }
 .second h2 {
@@ -91,13 +112,15 @@ header a {
 .card{
   display: flex;
   flex-direction: column;
+	gap:15px;
   align-items: center;
 }
-.card img {
-	height: 180px;
-	border: 10px solid blue;
+.card-photo {
+	height: 100px;
+	width: 100px;
+	background-color: var(--secondary);
+	border: 5px solid var(--accent);
 	border-radius: 10px;
-	width: auto;
 }
 .text {
   max-width: 180px;
@@ -108,7 +131,7 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(198, 198, 198, 0.592);
+  background-color: var(--secondary);
   gap: 10px;
   padding: 90px;
 }
@@ -135,15 +158,17 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(32, 32, 32);
   padding: 100px;
 }
 .f-container{
+	width: 1000px;
+	padding: 40px 50px;
   display: flex;
+	align-items:center ;
+	justify-content: space-around;
   gap :40px;
-  padding: 30px;
   border-radius: 14px;
-  background-color: aquamarine;
+  background-color: var(--accent);
 }
 .f-left{
   display: flex;
@@ -155,15 +180,19 @@ header a {
   max-width: 600px;
 }
 .donate{
-  padding: 20px 40px;
-  border-radius: 10px;
-  background-color: greenyellow;
+  padding: 10px;
+	border-radius: 10px;
+	font-weight: 600;
+	color: var(--background);
+	background-color: var(--accent);
+	border: 2px solid var(--background);
+  
 }
 footer{
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: rgba(117, 117, 74, 0.266);
-  color: black;
+  background-color: var(--primary);
+  color: white;
 }
